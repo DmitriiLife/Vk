@@ -1,14 +1,14 @@
 package ru.netology.domain;
 
 public class ViewsInfo {
+
     private int count;
 
-    //    + get/set на все поля
+    public int getCount() {
+        return count;
+    }
 
-    public static class Geo {
-        private String type;
-        private String coordinates;
-
-    //    + get/set на все поля
+    public void setCount(int count) {
+        this.count = count;
     }
 }
