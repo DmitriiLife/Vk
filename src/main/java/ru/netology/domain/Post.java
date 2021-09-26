@@ -1,6 +1,31 @@
 package ru.netology.domain;
 
 public class Post {
+
+    private int id;
+    private int ownerId;
+    private int fromId;
+    private int createdBy;
+    private int date;
+    private String text;
+    private int replyOwnerId; // поле из документации
+    private int getReplyPostID; // поле из документации
+    private int FriendsOnly; // поле из документации
+    private CommentsInfo CommentsInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс CommentsInfo
+    private LikesInfo likesInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс LikesInfo
+    private RepostsInfo repostsInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс RepostsInfo
+    private ViewsInfo viewsInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс ViewsInfo
+    private String PostType; // поле из документации
+    private GeoInfo geoInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс GeoInfo
+    private int signedId; // поле из документации
+    private int canPin; // поле из документации
+    private int canDelete; // поле из документации
+    private int canEdit; // поле из документации
+    private int isPinned; // поле из документации
+    private int markedAsAds; // поле из документации
+    private boolean isFavorite; // поле из документации
+    private Donut donut; // в документации он типа object, под такой тип объекта мы создали отдельный класс Donut
+    private int postponedId; // поле из документации
     public int getId() {
         return id;
     }
@@ -192,30 +217,5 @@ public class Post {
     public void setPostponedId(int postponedId) {
         this.postponedId = postponedId;
     }
-
-    private int id;
-    private int ownerId;
-    private int fromId;
-    private int createdBy;
-    private int date;
-    private String text;
-    private int replyOwnerId; // поле из документации
-    private int getReplyPostID; // поле из документации
-    private int FriendsOnly; // поле из документации
-    private CommentsInfo CommentsInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс CommentsInfo
-    private LikesInfo likesInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс LikesInfo
-    private RepostsInfo repostsInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс RepostsInfo
-    private ViewsInfo viewsInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс ViewsInfo
-    private String PostType; // поле из документации
-    private GeoInfo geoInfo; // в документации он типа object, под такой тип объекта мы создали отдельный класс GeoInfo
-    private int signedId; // поле из документации
-    private int canPin; // поле из документации
-    private int canDelete; // поле из документации
-    private int canEdit; // поле из документации
-    private int isPinned; // поле из документации
-    private int markedAsAds; // поле из документации
-    private boolean isFavorite; // поле из документации
-    private Donut donut; // в документации он типа object, под такой тип объекта мы создали отдельный класс Donut
-    private int postponedId; // поле из документации
 
 }
